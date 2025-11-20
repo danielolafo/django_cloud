@@ -1,8 +1,8 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '.', '-t', 'gcr.io/project-id/djangocloud:$SHORT_SHA', '-t', 'gcr.io/project-id/express-ts:latest']
+  args: ['build', '.', '-t', 'gcr.io/erudite-marker-477918-f4/djangocloud:$SHORT_SHA', '-t', 'gcr.io/project-id/express-ts:latest']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['image', 'push', '--all-tags', 'gcr.io/project-id/djangocloud']
+  args: ['image', 'push', '--all-tags', 'gcr.io/erudite-marker-477918-f4/djangocloud']
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
     - run
