@@ -7,7 +7,7 @@ steps:
     args:
       - run
       - deploy
-      - --region=asia-southeast1
+      - --region=us-east1
       - --image=gcr.io/erudite-marker-477918-f4/djangocloud:latest
       - --max-instances=1
       - --platform=managed
