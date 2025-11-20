@@ -7,9 +7,9 @@ steps:
     args:
       - run
       - deploy
-      - --region=us-south1
+      - --region=northamerica-northeast1
       - --image=gcr.io/erudite-marker-477918-f4/djangocloud:$SHORT_SHA
-      - --max-instances=1
+      - --max-instances=3
       - --platform=managed
       - --port=8000
       - --allow-unauthenticated
