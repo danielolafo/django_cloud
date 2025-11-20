@@ -8,7 +8,7 @@ steps:
       - run
       - deploy
       - --region=us-south1
-      - --image=gcr.io/erudite-marker-477918-f4/djangocloud:latest
+      - --image=gcr.io/erudite-marker-477918-f4/djangocloud::${SHORT_SHA}
       - --max-instances=1
       - --platform=managed
       - --port=8000
