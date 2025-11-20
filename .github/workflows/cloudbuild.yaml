@@ -1,16 +1,16 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '.', '-t', 'gcr.io/erudite-marker-477918-f4/djangocloud:$SHORT_SHA', '-t', 'gcr.io/project-id/express-ts:latest']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['image', 'push', '--all-tags', 'gcr.io/erudite-marker-477918-f4/djangocloud']
-- name: 'gcr.io/cloud-builders/gcloud'
-  args:
-    - run
-    - deploy
-    - --region=asia-southeast1
-    - --image=gcr.io/project-id/express-ts:latest
-    - --max-instances=1
-    - --platform=managed
-    - --port=8000
-    - --allow-unauthenticated
-    - express-ts
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '.', '-t', 'gcr.io/erudite-marker-477918-f4/djangocloud:$SHORT_SHA', '-t', 'gcr.io/project-id/express-ts:latest']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['image', 'push', '--all-tags', 'gcr.io/erudite-marker-477918-f4/djangocloud']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - run
+      - deploy
+      - --region=asia-southeast1
+      - --image=gcr.io/project-id/express-ts:latest
+      - --max-instances=1
+      - --platform=managed
+      - --port=8000
+      - --allow-unauthenticated
+      - express-ts
