@@ -14,3 +14,5 @@ steps:
       - --port=8000
       - --allow-unauthenticated
       - djangocloud
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
