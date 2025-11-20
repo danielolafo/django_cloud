@@ -12,6 +12,7 @@ steps:
       - --max-instances=3
       - --platform=managed
       - --port=8000
+      - --SERVER_PORT=8000
       - --allow-unauthenticated
       - djangocloud
 options:
