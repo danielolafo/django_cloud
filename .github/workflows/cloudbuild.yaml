@@ -8,9 +8,9 @@ steps:
       - run
       - deploy
       - --region=asia-southeast1
-      - --image=gcr.io/project-id/express-ts:latest
+      - --image=gcr.io/erudite-marker-477918-f4/djangocloud:latest
       - --max-instances=1
       - --platform=managed
       - --port=8000
       - --allow-unauthenticated
-      - express-ts
+      - djangocloud
