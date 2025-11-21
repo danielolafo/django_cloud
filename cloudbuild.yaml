@@ -15,6 +15,6 @@ steps:
       - --allow-unauthenticated
       - --timeout=1800s
       - djangocloud
-    timeout: 1800s
+timeout: 1800s
 options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
