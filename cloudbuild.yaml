@@ -13,8 +13,8 @@ steps:
       - --platform=managed
       - --port=8000
       - --allow-unauthenticated
-      - --timeout=1800s
+      - --timeout=18000s
       - djangocloud
-timeout: 1800s
+timeout: 18000s
 options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET

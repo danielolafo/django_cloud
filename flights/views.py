@@ -1,8 +1,8 @@
 import time
 
-from django.shortcuts import render
+#from django.shortcuts import render
 from rest_framework.views import APIView
-import requests
+#import requests
 import nest_asyncio; nest_asyncio.apply()  # This is needed to use sync API in repl
 from playwright.sync_api import sync_playwright
 from django.http import HttpResponse

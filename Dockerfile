@@ -59,4 +59,4 @@ RUN echo "Port exposed"
 
 # Start the application using Gunicorn
 #CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "3", "my_docker_django_app.wsgi:application"]
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000","--http_timeout 120"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
