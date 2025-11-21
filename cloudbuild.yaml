@@ -13,6 +13,7 @@ steps:
       - --platform=managed
       - --port=8000
       - --allow-unauthenticated
+      - --env=SERVER_PORT=8000
       - djangocloud
     timeout: 900s
 options:
