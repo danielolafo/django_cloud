@@ -45,6 +45,7 @@ COPY --chown=appuser:appuser . .
 # Set environment variables to optimize Python
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
+ENV SERVER_PORT=8000
 
 RUN echo "Setting USER"
 
