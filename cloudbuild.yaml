@@ -10,10 +10,10 @@ steps:
       - --region=northamerica-northeast1
       - --image=gcr.io/erudite-marker-477918-f4/djangocloud:$SHORT_SHA
       - --max-instances=1
-      - --env=SERVER_PORT=8000
       - --platform=managed
       - --port=8000
       - --allow-unauthenticated
+      - --timeout=1800s
       - djangocloud
     timeout: 1800s
 options:
