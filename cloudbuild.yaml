@@ -15,6 +15,9 @@ steps:
       - --allow-unauthenticated
       - --timeout=1800s
       - djangocloud
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args: ['-c', 'gcloud config set app/cloud_build_timeout 1800 && gcloud app deploy my-service/my-config.yaml']
 timeout: 1800s
 options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
