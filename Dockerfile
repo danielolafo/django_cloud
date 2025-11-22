@@ -17,6 +17,8 @@ RUN echo "Running pip install"
 # Upgrade pip and install dependencies
 RUN pip install --upgrade pip
 
+RUN playwright install chrome
+
 # Copy the requirements file first (better caching)
 COPY requirements.txt /app/
 
